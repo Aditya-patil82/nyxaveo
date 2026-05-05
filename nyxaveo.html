@@ -1,0 +1,290 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYXAVEO — Multi Industry AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--gold:#C9A84C;
+--dark:#070707;
+--dark2:#111;
+--white:#FAF7F0;
+--muted:#888;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:var(--dark);
+color:var(--white);
+font-family:'DM Sans',sans-serif;
+}
+
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(201,168,76,0.2);
+z-index:100;
+}
+
+.logo{
+font-family:'Cormorant Garamond';
+color:var(--gold);
+font-size:24px;
+letter-spacing:3px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:var(--muted);
+text-decoration:none;
+font-size:13px;
+letter-spacing:1px;
+}
+
+nav a:hover{color:var(--gold)}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:80px;
+}
+
+.hero h1{
+font-size:90px;
+font-family:'Cormorant Garamond';
+letter-spacing:6px;
+}
+
+.hero span{color:var(--gold)}
+
+.hero p{
+color:var(--muted);
+margin:20px 0;
+max-width:600px;
+line-height:1.6;
+}
+
+.btn{
+border:1px solid var(--gold);
+padding:14px 35px;
+color:var(--gold);
+text-decoration:none;
+font-size:12px;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:var(--gold);
+color:black;
+}
+
+/* SECTION */
+section{
+padding:100px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+font-family:'Cormorant Garamond';
+font-size:42px;
+margin-bottom:20px;
+}
+
+.divider{
+width:50px;
+height:1px;
+background:var(--gold);
+margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+border:1px solid rgba(201,168,76,0.2);
+padding:30px;
+background:#0d0d0d;
+transition:0.3s;
+}
+
+.card:hover{
+background:#151515;
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+font-family:'Cormorant Garamond';
+}
+
+/* CEO */
+.ceo{
+display:grid;
+grid-template-columns:400px 1fr;
+gap:50px;
+align-items:center;
+}
+
+.ceo img{
+width:100%;
+border:1px solid rgba(201,168,76,0.3);
+}
+
+blockquote{
+border-left:2px solid var(--gold);
+padding-left:15px;
+font-style:italic;
+margin-bottom:20px;
+font-family:'Cormorant Garamond';
+font-size:20px;
+}
+
+.tags span{
+border:1px solid rgba(201,168,76,0.3);
+padding:5px 10px;
+margin:5px;
+display:inline-block;
+font-size:11px;
+color:var(--muted);
+}
+
+/* CONTACT */
+.contact{text-align:center}
+
+footer{
+text-align:center;
+padding:20px;
+border-top:1px solid rgba(201,168,76,0.2);
+color:var(--muted);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+.ceo{grid-template-columns:1fr}
+nav{padding:20px}
+.hero h1{font-size:50px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">NYXAVEO</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">CEO</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>NYX<span>AVEO</span></h1>
+<p>We build AI systems that generate revenue, automate businesses, and solve real-world problems across multiple industries.</p>
+<a href="#" class="btn">Get Free AI Audit</a>
+</section>
+
+<!-- SERVICES -->
+<section>
+<h2>Services</h2>
+<div class="divider"></div>
+
+<div class="grid">
+<div class="card"><h3>Lead Automation</h3><p>AI funnels that convert leads automatically.</p></div>
+<div class="card"><h3>WhatsApp AI</h3><p>Automate chats, leads, and bookings.</p></div>
+<div class="card"><h3>Business AI Systems</h3><p>Complete automation for your business.</p></div>
+</div>
+</section>
+
+<!-- SUCCESS -->
+<section>
+<h2>Our Breakthrough</h2>
+<div class="divider"></div>
+
+<p><strong>Plant to Human Communication</strong> is our first successful AI system.</p>
+<p>This system is live, working, and has already generated <strong>₹10,000+</strong>.</p>
+<p>We don’t build ideas. We build systems that work.</p>
+</section>
+
+<!-- INDUSTRIES -->
+<section>
+<h2>Industries We Work In</h2>
+<div class="divider"></div>
+
+<div class="grid">
+<div class="card"><h3>FinTech</h3><p>AI financial systems.</p></div>
+<div class="card"><h3>Gaming</h3><p>AI gameplay & logic.</p></div>
+<div class="card"><h3>Healthcare</h3><p>Health intelligence systems.</p></div>
+<div class="card"><h3>AgriTech</h3><p>Plant intelligence systems.</p></div>
+<div class="card"><h3>Design Tech</h3><p>Creative AI tools.</p></div>
+</div>
+</section>
+
+<!-- CEO -->
+<section class="ceo">
+<img src="aditya.jpg">
+
+<div>
+<h2>Aditya Patil</h2>
+<div class="divider"></div>
+
+<blockquote>"I build systems that generate real results."</blockquote>
+
+<p>Founder & CEO of NYXAVEO. Creator of Plant to Human system which generated ₹10,000+ revenue.</p>
+
+<div class="tags">
+<span>AI Developer</span>
+<span>Founder</span>
+<span>Inventor</span>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact</h2>
+<div class="divider"></div>
+
+<p>Let’s build something powerful.</p>
+
+<a href="https://wa.me/9740411583" class="btn">WhatsApp Now</a>
+</section>
+
+<footer>
+© 2026 NYXAVEO — Built by Aditya Patil
+</footer>
+
+</body>
+</html>
+```
